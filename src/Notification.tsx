@@ -5,7 +5,7 @@ const Notification = (props:any) => {
         <div className={`w-full p-4 flex gap-2 my-3 rounded ${readStyle}`}>
             <img src={props.avatar} alt="" className="w-10 h-10 mr-3 rounded-full"/>
                 <div className="text-sm text-neutral-blue-5">
-                    <strong className="text-neutral-blue-6">{props.name} </strong>  
+                    <strong className="text-neutral-blue-6 active:text-primary-blue cursor-pointer">{props.name} </strong>  
                     <p className="inline">{props.action}</p>
                     {props.group && <p className=" text-primary-blue font-bold mx-1 inline cursor-pointer">{props.group} </p>}
                     {props.target && <p className="inline font-bold active:text-primary-blue cursor-pointer"> {props.target}</p>}
